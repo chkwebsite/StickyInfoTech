@@ -1,0 +1,19 @@
+:root{
+    /* --scroll-bg-1:#dc3545;
+    --scroll-bg-2:#b31323;
+    --top-header-bg:#2c3f44;
+    --sidenav-bg-1:#dc3545;
+    --sidenav-bg-2:rgba(0,0,0,0.7);
+    --sidebar-icon-color:rgba(255, 255, 255, 0.5);
+    --sidebar-label-color:rgba(255, 255, 255, 0.5);
+    --all-label:#dc3545; */
+    --scroll-bg-1:red;
+    --scroll-bg-2:blue;
+    --top-header-bg:#2c3f44;
+    --sidenav-bg-1:#e00024;
+    --sidenav-bg-2:#920920;
+    --sidebar-icon-color:#fbfbfb;
+    --sidebar-label-color:#fbfbfb;
+    --label-standered:#545454;
+    --label-theme:#b61731;
+}
