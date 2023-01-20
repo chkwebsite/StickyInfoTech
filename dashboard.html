@@ -84,6 +84,7 @@
                             <h5 class="label-theme">Color Theme</h5>
                             <button type="button" class="btn btn-link default-color" title="Default"><i class="fa fa-circle default-color "></i></button>
                         <button type="button" class="btn btn-link red-color" title="Red"><i class="fa fa-circle text-red"></i></button>
+                        <button type="button" class="btn btn-link black-color" title="Blcak"><i class="fa fa-circle text-black"></i></button>
                         <button type="button" class="btn btn-link pink-color" title="Pink"><i class="fa fa-circle text-pink"></i></button>
                         <button type="button" class="btn btn-link orange-color" title="Orange"> <i class="fa fa-circle text-orange"></i></button>
                         <button type="button" class="btn btn-link bluegreen-color" title="Blue Green"><i class="fa fa-circle text-bluegreen"></i></button>
@@ -413,21 +414,21 @@
                       </div>
                 </div>
                   <div class="col-sm-12 mb-3">
-                    <div class="card" data-aos="fade-down">
+                    <div class="card shadow" data-aos="fade-down">
                         <div class="card-body" style="height: 380px;">
                             <div id="chart-container"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="card" data-aos="fade-up">
+                    <div class="card shadow" data-aos="fade-up">
                         <div class="card-body" style="height: 380px;">
                             <div id="chart-container-pai"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="card" data-aos="fade-up">
+                    <div class="card shadow" data-aos="fade-up">
                         <div class="card-body" style="height: 380px;">
                             <div id="chart-container-g"></div>
                         </div>
@@ -585,7 +586,7 @@
                     $('.main-footer').addClass('main-footer-lg', true)
                     sessionStorage.foot = 'main-footer-lg'
                 }else{
-                    $('.main-footer').addClass('main-footer-lg', false)
+                    $('.main-footer').removeClass('main-footer-lg', false)
                     sessionStorage.foot = ''
                 }
                 $('.side-nav-togg').toggleClass('arrows-left')
@@ -656,6 +657,10 @@
           $('.default-color').click(function () {
               $(selector).attr('href', folder_path + 'color.css');
               sessionStorage.setItem('ajwebskin', 'color.css');
+          });
+          $('.black-color').click(function () {
+              $(selector).attr('href', folder_path + 'black-color.css');
+              sessionStorage.setItem('ajwebskin', 'black-color.css');
           });
           $('.red-color').click(function () {
               $(selector).attr('href', folder_path + 'red-color.css');

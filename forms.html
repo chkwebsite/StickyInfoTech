@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/sites_styles.css">
     <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <title>BOOT-5-_-THEME-3</title>
     <style>
@@ -278,7 +279,7 @@
                 <div class="row py-3">
                   <div class="col-sm-12">
                     <div class="ab page-header  " data-aos="flip-up">
-                        <i class="fa-solid fa-hand-point-right fa-2x"></i> Page Header
+                        <i class="fa-solid fa-hand-point-right fa-2x"></i> Forms
                         <button type="button" class="btn btn-link p-0 float-end" title="Filter" data-bs-toggle="offcanvas" data-bs-target="#filter">
                             <i class="bi bi-funnel-fill" style="font-size:19px;"></i>
                         </button>
@@ -353,19 +354,292 @@
                       </div>
                 </div>
                   <div class="col-sm-12 mb-3">
-                    <div class="card shadow" data-aos="fade-down">
+                    <div class="card shadow" data-aos="flip-down">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <div class="page-header-v2">
-                                        <i class="fa-solid fa-hand-point-right spinner-grow fa-2x"></i> Chandan
-                                    </div>
-                                    <div class="page-header-v3">
-                                        <i class="fa-solid fa-hand-point-right spinner-grow fa-2x"></i> Chandan
-                                    </div>
-                                    <div class="page-header-v4">
-                                        <i class="fa-solid fa-hand-point-right spinner-grow fa-2x"></i> Chandan
-                                    </div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item shadow mb-3">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                             Simple Form
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <div class="row">
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 shadow">
+                                                    <div class="mb-3 mt-3">
+                                                        <label for="email" class="form-label">Email:</label>
+                                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                    </div>
+                                                    <div class="mb-3 mt-3">
+                                                        <label for="email" class="form-label">Select:</label>
+                                                        <select class="form-control">
+                                                            <option>Select All</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3 mt-3">
+                                                        <label for="email" class="form-label">Text area:</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="mb-3 mt-3">
+                                                        <label for="email" class="form-label">Multi Select:</label>
+                                                        <select class="selectpicker form-control" multiple aria-label="Default select example" data-live-search="true" required>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 shadow">
+                                                    <div class="mb-3 mt-3">
+                                                        <div class="row">
+                                                        <label for="email" class="form-label col-3">Email:</label>
+                                                        <div class="col-sm-9">
+                                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                    <div class="mb-3 mt-3">
+                                                        <div class="row">
+                                                        <label for="email" class="form-label col-3">Select:</label>
+                                                        <div class="col-sm-9">
+                                                        <select class="form-control">
+                                                            <option>Select All</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                    <div class="mb-3 mt-3">
+                                                        <div class="row">
+                                                        <label for="email" class="form-label col-3">Text area:</label>
+                                                        <div class="col-sm-9">
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                    <div class="mb-3 mt-3">
+                                                        <div class="row">
+                                                        <label for="email" class="form-label col-3">Multi Select:</label>
+                                                        <div class="col-sm-9">
+                                                        <select class="selectpicker form-control" multiple aria-label="Default select example" data-live-search="true" required>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                            <option value="4">Four</option>
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item shadow mb-3">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Floating Label with Validation Forms
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 shadow">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                            <label for="email">Email</label>
+                                                          </div>
+                                                          <div class="form-floating mt-3 mb-3">
+                                                            <select class="form-control">
+                                                                <option></option>
+                                                                <option>Select All</option>
+                                                            </select>
+                                                            <label for="pwd">Select</label>
+                                                          </div>
+                                                          <div class="form-floating mt-3 mb-5">
+                                                            <select class="selectpicker form-control" multiple aria-label="Default select example" data-live-search="true" required>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                                <option value="4">Four</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                                <option value="4">Four</option>
+                                                              </select>
+                                                              <label  class="form-label">Multi Select:</label>
+                                                          </div>
+
+
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    </div>
+                                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 shadow">
+                                                        <form class="was-validated">
+                                                        <div class="form-floating mb-3 mt-3">
+                                                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                                            <label for="email">Email</label>
+                                                          </div>
+                                                          <div class="form-floating mt-3 mb-3">
+                                                            <select class="form-control" required>
+                                                                <option></option>
+                                                                <option>Select All</option>
+                                                            </select>
+                                                            <label for="pwd">Select</label>
+                                                          </div>
+                                                          <div class="form-floating mt-3 mb-5">
+                                                            <select class="selectpicker form-control" multiple aria-label="Default select example" data-live-search="true" required>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                                <option value="4">Four</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                                <option value="4">Four</option>
+                                                              </select>
+                                                              <label  class="form-label">Multi Select:</label>
+                                                          </div>
+                                                        </form>
+
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item shadow mb-3 d-none">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Floating Label with Validation Forms
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              ccc
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item shadow mb-3">
+                                            <h2 class="accordion-header" id="headingfour">
+                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                                  Buttons, Check Box and Radio
+                                              </button>
+                                            </h2>
+                                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                              <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked="">
+                                                            <label class="form-check-label" for="check1">Option 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                                                            <label class="form-check-label" for="check2">Option 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" disabled="">
+                                                            <label class="form-check-label">Option 3</label>
+                                                          </div>
+                                                          <hr>
+                                                          <div class="form-check">
+                                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked="">Option 1
+                                                            <label class="form-check-label" for="radio1"></label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+                                                            <label class="form-check-label" for="radio2"></label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" class="form-check-input" disabled="">Option 3
+                                                            <label class="form-check-label"></label>
+                                                          </div>
+                                                          <hr>
+                                                          <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked="">
+                                                            <label class="form-check-label" for="mySwitch">Dark Mode</label>
+                                                          </div>
+                                                         </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <button type="button" class="btn">Basic</button>
+                                                        <button type="button" class="btn btn-primary">Primary</button>
+                                                        <button type="button" class="btn btn-secondary">Secondary</button>
+                                                        <button type="button" class="btn btn-success">Success</button>
+                                                        <button type="button" class="btn btn-info">Info</button>
+                                                        <button type="button" class="btn btn-warning">Warning</button>
+                                                        <button type="button" class="btn btn-danger">Danger</button>
+                                                        <button type="button" class="btn btn-dark">Dark</button>
+                                                        <button type="button" class="btn btn-light">Light</button>
+                                                        <button type="button" class="btn btn-link">Link</button>
+                                                        <hr>
+                                                        <button type="button" class="btn">Basic</button>
+                                                        <button type="button" class="btn btn-primary rounded-5">Primary</button>
+                                                        <button type="button" class="btn btn-secondary rounded-5">Secondary</button>
+                                                        <button type="button" class="btn btn-success rounded-5">Success</button>
+                                                        <button type="button" class="btn btn-info rounded-5">Info</button>
+                                                        <button type="button" class="btn btn-warning rounded-5">Warning</button>
+                                                        <button type="button" class="btn btn-danger rounded-5">Danger</button>
+                                                        <button type="button" class="btn btn-dark rounded-5">Dark</button>
+                                                        <button type="button" class="btn btn-light rounded-5">Light</button>
+                                                        <button type="button" class="btn btn-link rounded-5">Link</button>
+                                                        <hr>
+                                                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                                                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                                        <button type="button" class="btn btn-outline-success">Success</button>
+                                                        <button type="button" class="btn btn-outline-info">Info</button>
+                                                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                                                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                                                        <button type="button" class="btn btn-outline-dark">Dark</button>
+                                                        <button type="button" class="btn btn-outline-light text-dark">Light</button>
+                                                        <hr>
+                                                        <button type="button" class="btn btn-outline-primary rounded-5">Primary</button>
+                                                        <button type="button" class="btn btn-outline-secondary rounded-5">Secondary</button>
+                                                        <button type="button" class="btn btn-outline-success rounded-5">Success</button>
+                                                        <button type="button" class="btn btn-outline-info rounded-5">Info</button>
+                                                        <button type="button" class="btn btn-outline-warning rounded-5">Warning</button>
+                                                        <button type="button" class="btn btn-outline-danger rounded-5">Danger</button>
+                                                        <button type="button" class="btn btn-outline-dark rounded-5">Dark</button>
+                                                        <button type="button" class="btn btn-outline-light text-dark rounded-5">Light</button>
+                                                        <hr>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-primary">Apple</button>
+                                                            <button type="button" class="btn btn-warning">Samsung</button>
+                                                            <button type="button" class="btn btn-danger">Sony</button>
+                                                          </div>
+                                                          <hr>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-outline-primary">Apple</button>
+                                                            <button type="button" class="btn btn-outline-warning">Samsung</button>
+                                                            <button type="button" class="btn btn-outline-danger">Sony</button>
+                                                          </div>
+                                                         </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +651,7 @@
           </div>
         </div>
         <!-- FOOTER START  -->
-        <footer class="main-footer px-3">
+        <footer class="main-footer px-3 top-header-bg">
           <strong>Copyright &copy; 2022-2023 <a href="#">Microware</a>.</strong>
           All rights reserved.
           <div class="float-right d-none d-sm-inline-block">
@@ -391,6 +665,7 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/all.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
     <script type="text/javascript" src="assets/js/aos.js"></script>
    
     <script type="text/javascript">

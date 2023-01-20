@@ -32,7 +32,7 @@
 .body-bg::before{
   content: '';
   position: absolute;
-  background-color: rgb(255 255 255 / 50%);
+  background-color: var(--theme-body-bg);
   z-index: -1;
   top: 0;
   bottom: 0;
@@ -62,6 +62,9 @@ color: var(--label-theme);
 svg.default-color{
 color:#0dcaf0;
 }
+svg.text-black{
+  color:#2a2a2a !important;
+  }
 svg.text-red{
 color:#dc3545;
 }
@@ -94,7 +97,7 @@ opacity: 0;
 padding-right: 8px;
 }
 ul.top-header li a{
-color: #fbfbfb;
+color: #00f3ff;
 font-weight: 100;
 font-size: 14px;
 }
@@ -317,6 +320,7 @@ border-bottom: 1px solid rgba(255,255,255, 0.5);
 float: left;
 width: 100%;
 background-color: rgb(78 106 110 / 20%);
+color: var(--sidebar-label-color);
 }
 .user-info a {
 height: 25px;
@@ -555,6 +559,9 @@ padding-left: 0.3rem;
 .side-warper .navbar-nav .dropdown-menu {
 position: absolute;
 }
+}
+ul.side-smm li.nav-item a.nav-link{
+  color: #fbfbfb;
 }
 /* ===========================SIDE MENU CSS END===========================  */
 
@@ -898,6 +905,7 @@ body.top-warper a.active{
   top: 0;
   z-index: 2;
   background: var(--scroll-bg-1);
+  color: #ffffff;
 }
 
 .table-container table thead tr th:nth-child(1) {
@@ -985,3 +993,34 @@ ul.pagination li.paginate_button.active{
   box-shadow: inset 0px 1px black;
 } */
 /* TABLE CSS END  */
+.accordion-button:not(.collapsed) {
+  color: var(--sidebar-icon-color);
+  background: linear-gradient(90deg, var(--sidenav-bg-1) 25%, var(--sidenav-bg-2) 100%);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.form-floating .bootstrap-select .dropdown-toggle .filter-option {
+  position: static;
+  top: 0;
+  left: 0;
+  float: left;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  line-height: 60px;
+}
+.form-floating .bootstrap-select button{
+  position: absolute !important;
+  top: 0px;
+  height: 60px;
+  background-color: #fff !important;
+  border: 1px solid #ced4da;
+}
+.form-check-input:checked {
+  background-color: var(--scroll-bg-1);
+  border-color: var(--scroll-bg-1);
+}
