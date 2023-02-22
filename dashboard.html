@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <title>BOOT-5-_-Latest Theme</title>
     <style>
+      @media (max-width: 991px) {
+  .tab-content>.tab-pane {
+    display: block;
+    opacity: 1;
+  }
+}
     </style>
 </head>
 <body class="body-bg bg-light top-warper">
@@ -30,7 +36,7 @@
                     <div class="container-fluid">
                       <ul class="navbar-nav top-header">
                         <li class="nav-item">
-                          <a class="nav-link" href="#"> 
+                          <a class="nav-link" href="dashboard.html"> 
                             <i class="fa-solid fa-house-user spinner-grow" title="Home"></i> 
                             <span>Home</span> 
                           </a>
@@ -257,7 +263,7 @@
        <!-- Body Container START -->
        <div class="site-fluid">
         <!-- SIDENAV START  -->
-            <div id="fin" class="sidebars s-fix side-nav-gradient rounded1 bg-danger shadow-lg ">
+            <div id="fin" class="sidebars s-fix side-nav-gradient rounded1  shadow-lg ">
                 <div class="user-info p-2">
                     <span class="sh-sm">A.R</span>
                     <span class="sh-lg">Application Root</span>
@@ -334,7 +340,7 @@
                   </div>
                   
                   </div>
-                  <img class="header-pic" src="assets/images/header-bg-3.jpg">
+                  <!-- <img class="header-pic" src="assets/images/header-bg-3.jpg"> -->
                 </div>
                 <div class="row py-3">
                   <div class="col-sm-12">
@@ -414,24 +420,64 @@
                       </div>
                 </div>
                   <div class="col-sm-12 mb-3">
-                    <div class="card shadow" data-aos="fade-down">
-                        <div class="card-body" style="height: 380px;">
-                            <div id="chart-container"></div>
+                    <div class="card shadow mb-3">
+                      <div class="card-body">
+                        <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-styles active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">State</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-styles" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">District</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-styles" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Block</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content accordion" id="myTabContent">
+                          <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        
+                            <h2 class="accordion-header d-lg-none" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">State</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                              <div class="accordion-body">
+                                <div style="height: 380px;">
+                                  <div id="chart-container"></div>
+                              </div>
+                              </div>
+                            </div>
+                        
+                          </div>
+                          <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <h2 class="accordion-header d-lg-none" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                District
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
+                              <div class="accordion-body">
+                                <div style="height: 380px;">
+                                  <div id="chart-container-pai"></div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade accordion-item" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <h2 class="accordion-header d-lg-none" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Block
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingThree" data-bs-parent="#myTabContent">
+                              <div class="accordion-body">
+                                <div  style="height: 380px;">
+                                  <div id="chart-container-g"></div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="card shadow" data-aos="fade-up">
-                        <div class="card-body" style="height: 380px;">
-                            <div id="chart-container-pai"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="card shadow" data-aos="fade-up">
-                        <div class="card-body" style="height: 380px;">
-                            <div id="chart-container-g"></div>
-                        </div>
+                      </div>
                     </div>
                 </div>
                 </div>

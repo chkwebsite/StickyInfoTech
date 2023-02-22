@@ -21,7 +21,7 @@
   background: var(--scroll-bg-2);
 }
 /* ======================================================  */
-.body-bg{
+/* .body-bg{
   background-image: url(../images/web-p2.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
@@ -38,7 +38,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-}
+} */
 .login-body-bg{
   background-image: url(../images/login-bg.webp);
   background-repeat: repeat;
@@ -129,7 +129,7 @@ position: absolute;
 content: '';
 width: 100%;
 height: 100%;
-background: #00000096;
+background: transparent;
 top: 0;
 bottom: 0;
 right: 0;
@@ -178,12 +178,14 @@ z-index: 1051;
 margin-top: 10px;
 }
 .top-header-gradient{
+  /* background-image: url(../images/pattern_h.png);
+  background-size: cover; */
   background: linear-gradient(90deg, var(--sidenav-bg-1) 25%, var(--sidenav-bg-2) 100%);
 }
 .navbar-brand{
 background-color: rgba(0,0,0,0.1);
 margin-left: -15px;
-width: 280px;
+width: 283px;
 padding-left: 12px;
 padding-right: 12px;
 border-right: 2px solid rgba(0,0,0,0.1);
@@ -302,7 +304,13 @@ overflow-y: auto;
 /* ===========================SIDE MENU CSS START===========================  */
 
 .side-nav-gradient{
-background: linear-gradient(180deg, var(--sidenav-bg-1) 25%, var(--sidenav-bg-2) 100%);
+  background-image: url(../images/pattern.png);
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: var(--sidenav-bg-1);
+}
+.side-nav-gradient::before{
+background-color: linear-gradient(180deg, var(--sidenav-bg-1) 25%, var(--sidenav-bg-2) 100%) !important;
 }
 .s-fixed{
   position: fixed !important;
@@ -1023,4 +1031,112 @@ ul.pagination li.paginate_button.active{
 .form-check-input:checked {
   background-color: var(--scroll-bg-1);
   border-color: var(--scroll-bg-1);
+}
+
+/* =============================================================  */
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  isolation: inherit;
+  border-color: transparent;
+}
+.tab-pane.active{
+  background-color: #ffffff !important;
+}
+ul#myTab li{
+  padding-right: 2px;
+}
+.nav-tabs {
+  border-bottom: none !important;
+}
+ul#myTab li button.tab-styles{
+  position: relative;
+  background-color: #ccfdf6;
+  color: #ffffff;
+  padding: 8px 30px;
+  background: linear-gradient(90deg, var(--theme-light-color-1) 25%, var(--theme-light-color-2) 100%);
+  border: none;
+}
+ul#myTab li button.tab-styles.active{
+  background: linear-gradient(90deg, var(--sidenav-bg-1) 25%, var(--sidenav-bg-2) 100%);
+  border: none;
+    border-radius: 4px 0px 0px 4px;
+    color: #00ffdc !important;
+}
+ul#myTab li button.tab-styles.active::after{
+  position: absolute;
+  content: "";
+  border-top: 20px solid #00d0ff00 !important;
+  border-bottom: 20px solid #00ff4e00 !important;
+  border-left: 20px solid var(--sidenav-bg-2)  !important;
+  border-right: 0px solid #ff000000 !important;
+  top: 0px;
+  z-index: 2;
+}
+ul#myTab li:nth-child(1) button.tab-styles.active::before{
+  position: absolute;
+  content: "";
+  border-top: 0px solid #00d0ff00;
+  border-bottom: 0px solid #00ff4e00;
+  border-left: 0px solid #fbfbfb;
+  border-right: 0px solid #ff000000;
+  left: 0px;
+  top: 0px;
+}
+ul#myTab li button.tab-styles.active::before{
+    position: absolute;
+    content: "";
+    border-top: 20px solid #00d0ff00;
+    border-bottom: 20px solid #00ff4e00;
+    border-left: 20px solid #fbfbfb;
+    border-right: 0px solid #ff000000;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+ul#myTab li button.tab-styles::after{
+  position: absolute;
+  content: "";
+  border-top: 20px solid #00d0ff00;
+  border-bottom: 20px solid #00ff4e00;
+  border-left: 20px solid var(--theme-light-color-2);
+  border-right: 0px solid #ff000000;
+  right: -19px;
+  top: 0px;
+  z-index: 2;
+}
+ul#myTab li:nth-last-child(1) button.tab-styles::after{
+  position: absolute;
+  content: "";
+  border-top: 0px solid #00d0ff00 !important;
+  border-bottom: 0px solid #00ff4e00 !important;
+  border-left: 0px solid #ccfdf6 !important;
+  border-right: 0px solid #ff000000 !important;
+  right: -19px;
+  top: 0px;
+  z-index: 2;
+}
+ul#myTab li button.tab-styles::before{
+  position: absolute;
+  content: "";
+  border-top: 20px solid #00d0ff00;
+  border-bottom: 20px solid #00ff4e00;
+  border-left: 20px solid #ffffff;
+  border-right: 0px solid #ff000000;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+}
+ul#myTab li:nth-child(1) button.tab-styles::before{
+  position: absolute;
+  content: "";
+  border-top: 0px solid #00d0ff00;
+  border-bottom: 0px solid #00ff4e00;
+  border-left: 0px solid #ffffff;
+  border-right: px solid #ff000000;
+  left: 0px;
+  top: 0px;
+}
+@media(min-width:992px){
+  #myTabContent .collapse:not(.show) {
+    display: block !important;
+  }
 }
